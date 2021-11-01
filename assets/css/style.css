@@ -1,3 +1,75 @@
-html {
-  background-color: tomato;
+:root {
+  --color-1: #281240;
+  --color-2: #685762;
+  --color-3: #b8b42d;
+  --color-4: #cae1e2;
+  --color-5: #537a5a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: var(--color-4);
+  color: var(--color-1);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+  padding: 20px 35px;
+  background-color: var(--color-2);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  align-content: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: right;
+  list-style: none;
+}
+
+.circle {
+  background-color: var(--color-1);
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--color-3);
+}
+
+#headshot img{
+  width: 300px;
+  height: 300px;
+  border-radius: 75%;
+  object-fit: cover;
+  object-position: left -10px;
+}
+
+.my-pictures img{
+  width: 50%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768) {
+  body {
+    padding: 30px
+  }
 }
