@@ -63,7 +63,7 @@ header nav ul a {
 
 
 h2 {
-  color: var(--color-1);
+  color: var(--color-5);
   padding: 0 0 25px 0;
   font-size: 30px;
 }
@@ -112,26 +112,19 @@ h2 {
   padding: 30px;
 }
 
-.tiled-group h2 {
-/* background-color: var(--color-5);
-width: 100px;
-height: 100px;
-line-height: 100px;
-border-radius:50%; */
-color: var(--color-5);
-/* display:flex;
-flex-wrap: nowrap; */
-}
 
-.grouped-images a {
-  display: flex;
-  /* flex-wrap: wrap;
-  justify-content: space-evenly; */
-}
+
 
 .project-display {
-  align-content: space-around;
-  width: 100%;
+  width: 4500px;
+}
+
+.projects {
+  display: flex;
+}
+
+.small-projects{
+  flex:1;
 }
 
 #my-work img {
