@@ -13,7 +13,6 @@
 }
 
 
-
 body {
   background-color: var(--color-4);
   color: var(--color-1);
@@ -30,46 +29,132 @@ header {
   top: 0;
 }
 
+
+
+
 header h1 {
   align-content: center;
   justify-content: center;
   font-size: 50px;
 }
 
+header nav {
+  display: flex;
+  width: 50%;
+  justify-content: right;
+}
+
 header nav ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: right;
+  align-items:flex-start;
   list-style: none;
 }
 
+header nav ul li {
+  margin-right: 40px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  color: var(--color-3);
+
+}
+
+
+
+h2 {
+  color: var(--color-1);
+  padding: 0 0 25px 0;
+  font-size: 30px;
+}
+
+
+.profile-info {
+  padding: 50px 300px 50px 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
 .circle {
-  background-color: var(--color-1);
+  /* background-color: var(--color-1);
   width: 100px;
   height: 100px;
   line-height: 100px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 50%; */
   color: var(--color-3);
 }
 
 #headshot img{
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   border-radius: 75%;
   object-fit: cover;
   object-position: left -10px;
+  padding: 20px;
 }
 
-.my-pictures img{
-  width: 50%;
+.profile-info {
+  display: flex;
+  width: 1000px;
+}
+
+.profile-info article {
+  width: 200%;
+  padding: 20px;
+  align-content: center;
+  box-sizing: unset;
+}
+
+.tiled-group {
+  padding: 30px;
+}
+
+.tiled-group h2 {
+/* background-color: var(--color-5);
+width: 100px;
+height: 100px;
+line-height: 100px;
+border-radius:50%; */
+color: var(--color-5);
+/* display:flex;
+flex-wrap: nowrap; */
+}
+
+.grouped-images a {
+  display: flex;
+  /* flex-wrap: wrap;
+  justify-content: space-evenly; */
+}
+
+.project-display {
+  align-content: space-around;
+  width: 100%;
+}
+
+#my-work img {
+  width:33%;
 }
 
 /* Media Queries */
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 575px) {
   body {
-    padding: 30px
+    padding: 0px
+  }
+
+  nav {
+    width: 100px;
   }
 }
+
+/* 
+.circle {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  border-radius: 50%;
+} */
+
