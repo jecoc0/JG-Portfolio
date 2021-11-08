@@ -72,9 +72,12 @@ h2 {
 .profile-info {
   padding: 50px 300px 50px 300px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
+.tiled-group div div article h3 {
+  padding: 40px 0 8px 0;
+}
 
 
 .circle {
@@ -96,16 +99,20 @@ h2 {
   padding: 20px;
 }
 
-.profile-info {
+.profile-info div {
   display: flex;
   width: 1000px;
-}
+} 
 
 .profile-info article {
-  width: 200%;
+  width: 100%;
   padding: 20px;
   align-content: center;
   box-sizing: unset;
+}
+
+.profile-info p {
+  width: 500px;
 }
 
 .tiled-group {
@@ -113,23 +120,43 @@ h2 {
 }
 
 
-
-
 .project-display {
-  width: 4500px;
+  padding-bottom: 20px;
 }
 
-.projects {
-  display: flex;
+
+
+.project-display a img {
+  width: 100%;
 }
+
+/* .projects {
+  display: flex;
+} */
 
 .small-projects{
-  flex:1;
+  display: flex;
+  gap: 10px;
+  
+}
+.smaller-project{
+  width: 100%;
 }
 
-#my-work img {
-  width:33%;
+.small-projects a img {
+  width: 100%;
 }
+
+.contact-group div a img {
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 50px;
+}
+
+/* #my-work img {
+  width:33%;
+} */
 
 /* Media Queries */
 
